@@ -223,7 +223,7 @@ class WPSEO_Meta_Columns {
 	 * @return string The generated <option> element.
 	 */
 	protected function generate_option( $value, $label, $selected = false ) {
-		return '<option ' . $selected . ' value="' . $value . '">' . $label . '</option>';
+		return '<option ' . $selected . ' value="' . esc_attr( $value ) . '">' . esc_html( $label ) . '</option>';
 	}
 
 	/**
